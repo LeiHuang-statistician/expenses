@@ -20,7 +20,7 @@ export const GetExpenses=async(dispatch,token)=>{
         //     {_id:2, item:"gas",cost:"1.6"},
         //     {_id:3, item:"water",cost:"7.6"}
         // ];
-        const {data}=await axiosInstance.get(' ')
+        const {data}=await axiosInstance.get('/')
         //console.log(data)
         //dispatch(ActionCreators.setExpenses(data))
         dispatch(setExpenses(data))
