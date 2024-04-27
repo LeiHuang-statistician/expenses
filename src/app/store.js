@@ -11,6 +11,5 @@ export const store = configureStore({
     authenticationSlice:authenticationSlice
 
   },
-  middleware:(getDefaultMiddleware)=>getDefaultMiddleware().concat(ToastMiddleware),
-  devTools:false
+  middleware:(getDefaultMiddleware)=>getDefaultMiddleware().concat(ToastMiddleware)
 });
