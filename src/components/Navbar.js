@@ -11,7 +11,7 @@ const Navbar=()=>{
             <h1 style={{fontFamily:'Brush Script MT,cursive'}}>My Expenses</h1>
             {
                 isLoggedIn
-                ? <Button variant='link' href='/signin' onClick={()=>{dispatch(logout())}}>Log out</Button>
+                ? <Button variant='link' href='/' onClick={()=>{dispatch(logout())}}>Log out</Button>
                 :<div style={{display:'flex'}}>
                     <NavLink to= '/signup'>Sign up </NavLink>
                     <NavLink to= '/signin' style={{marginLeft:'1rem'}}>Sign in </NavLink>
